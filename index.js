@@ -88,7 +88,6 @@ Use the addFlavor function below to do the following:
 
 function addFlavor(arr, newFlavor) {
   arr.unshift(newFlavor);
-  // arr.splice(0, 1)
   return arr;
 }
 
