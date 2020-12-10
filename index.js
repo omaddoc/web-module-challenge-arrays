@@ -72,7 +72,7 @@ function is31Flavors(arr) {
   }
 }
 
-console.log(`Task 2: ${is31Flavors(originalFlavors)}`);
+// console.log(`Task 2: ${is31Flavors(originalFlavors)}`);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
@@ -86,12 +86,13 @@ Use the addFlavor function below to do the following:
     For example: addFlavor("Rainbow Sherbert", originalFlavors) should return the array ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla Burnt Almond"]
 */
 
-function addFlavor(newFlav, arr) {
-  arr.unshift(newFlav);
+function addFlavor(arr, newFlavor) {
+  arr.unshift(newFlavor);
+  // arr.splice(0, 1)
   return arr;
 }
 
-console.log("Task 3", addFlavor("Rainbow Sherbert", originalFlavors));
+console.log("Task 3", addFlavor(originalFlavors, "Rainbow Sherbert"));
 // console.log("Task 3", addFlavor("Chocolate", originalFlavors));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
